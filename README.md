@@ -32,19 +32,14 @@ The API includes the following functionality:
 
 ## Unique Design Decisions
 ### Team Acronyms as Primary Keys
-Instead of using numeric IDs, teams use their **acronym as the primary key**.
-### Adding to the Match table
-Contrary to what swagger might suggest, {"matchID": "",  "homeTeamID": ,  "awayTeamID": ,  "homeScore": ,  "awayScore": } are all what's needed to successfully add to the match table.
-
+Instead of using numeric IDs, teams use their **acronym as the primary key** and macthes use the combination of these names for their primary key.
 Example:RMA - Real Madrid
 BAR - Barcelona
 ATM - Atletico Madrid
-
-This makes match references clearer and easier to read.
-
 Example match:
 HomeTeam: RMA
 AwayTeam: BAR
+Match: RMABAR, BARRMA
 
 ### Dynamic League Table
 The standings table is **not stored permanently in the database**.
