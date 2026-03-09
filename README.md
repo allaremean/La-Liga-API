@@ -32,7 +32,7 @@ The API includes the following functionality:
 
 ## Unique Design Decisions
 ### Team Acronyms as Primary Keys
-Instead of using numeric IDs, teams use their acronym as the primary key and macthes use the combination of these names for their primary key.
+Instead of using numeric IDs, teams use their acronym as the primary key and matches use the combination of these names for their primary key.
 Example:RMA - Real Madrid
 BAR - Barcelona
 ATM - Atletico Madrid
@@ -84,7 +84,7 @@ GET /api/standings/{teamId}
 2. Open the project in Visual Studio
 3. Configure the database connection
 4. Run the project
-5. Test endpoints using Swagger.
+5. Test endpoints using Scalar (https://localhost:XXXX/scalar/v1).
 
 ## Author
 Project developed as part of a backend API exercise to showcase .NET knowledge depth.
