@@ -1,6 +1,6 @@
 # LaLiga API
 
-This project is an ASP.NET Core Web API that simulates a football league system similar to La Liga. It allows users to manage teams, matches, and automatically generate league standings.
+This project is an ASP.NET Core Web API that simulates a football league system. It allows users to manage teams, matches, and automatically generate league standings.
 
 ## Features
 
@@ -32,17 +32,17 @@ The API includes the following functionality:
 
 ## Unique Design Decisions
 ### Team Acronyms as Primary Keys
-Instead of using numeric IDs, teams use their **acronym as the primary key** and macthes use the combination of these names for their primary key.
+Instead of using numeric IDs, teams use their acronym as the primary key and macthes use the combination of these names for their primary key.
 Example:RMA - Real Madrid
 BAR - Barcelona
 ATM - Atletico Madrid
 Example match:
 HomeTeam: RMA
 AwayTeam: BAR
-Match: RMABAR, BARRMA
+Match: RMABAR
 
 ### Dynamic League Table
-The standings table is **not stored permanently in the database**.
+The standings table is not stored permanently in the database.
 Instead, it is **calculated dynamically** using match results:
 Statistics calculated include:
 - Matches Played
@@ -87,4 +87,4 @@ GET /api/standings/{teamId}
 5. Test endpoints using Swagger.
 
 ## Author
-Project developed as part of a backend API exercise to showcase what has been learnt.
+Project developed as part of a backend API exercise to showcase .NET knowledge depth.
